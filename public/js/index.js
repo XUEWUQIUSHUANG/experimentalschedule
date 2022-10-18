@@ -123,6 +123,9 @@ $(function () {
         $.ajax({
             // url
             url: serverUrl + "login",
+            xhrFields: {
+                withCredentials: true
+            },
             // 请求类型
             type: "GET",
             // 成功回调
@@ -346,22 +349,23 @@ $(function () {
             url: serverUrl + "getData",
             // 参数
             data: { account: $(".号").val(), password: $(".密").val(), code: $(".验").val() },
+            xhrFields: {
+                withCredentials: true
+            },
             // 请求类型
             type: "GET",
             // 成功回调
             success: function (data) {
-
-
-                    console.log(data);
-                    // console.log(课表.records.length);
-                    课表 = JSON.parse(data);
-                    课表 = 课表.records;
-                    课表 = 课表排序(课表);
-                    localStorage.setItem($(".号").val() + $(".密").val(), JSON.stringify(课表));
-                    localStorage.setItem("AutumnFrost", $(".号").val() + $(".密").val());
-                    localStorage.setItem("账号", $(".号").val());
-                    localStorage.setItem("密码", $(".密").val());
-                    加载();
+                // console.log(data);
+                // console.log(课表.records.length);
+                课表 = JSON.parse(data);
+                课表 = 课表.records;
+                课表 = 课表排序(课表);
+                localStorage.setItem($(".号").val() + $(".密").val(), JSON.stringify(课表));
+                localStorage.setItem("AutumnFrost", $(".号").val() + $(".密").val());
+                localStorage.setItem("账号", $(".号").val());
+                localStorage.setItem("密码", $(".密").val());
+                加载();
             }
         })
         $(".注册框架").hide();
