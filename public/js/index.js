@@ -349,15 +349,11 @@ $(function () {
             // 请求类型
             type: "GET",
             // 成功回调
-            success: function (data) {
-                if (data.code == 500) {
+            success: function (data,status) {
+                if (status == 500) {
                     alert(body);
                 } else {
-                    console.log(data,status);
-                    if (status == 500) {
-                    alert(body);
-                } else {
-                    console.log(data);
+                    // console.log(data);
                     // console.log(课表.records.length);
                     课表 = JSON.parse(data);
                     课表 = 课表.records;
@@ -367,7 +363,6 @@ $(function () {
                     localStorage.setItem("账号", $(".号").val());
                     localStorage.setItem("密码", $(".密").val());
                     加载();
-                }
                 }
             }
         })
