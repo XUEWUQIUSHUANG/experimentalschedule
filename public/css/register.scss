@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.注册框架 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 4;
+
+    .注册框 {
+        display: none;
+        position: absolute;
+        width: 70vw;
+        height: 50vw;
+        background-color: white;
+        border-radius: 5px;
+        left: 50%;
+        margin-left: -35vw;
+        top: 30%;
+        margin-top: -15vw;
+        background-color: rgba(0, 0, 0, .5);
+        background-size: 100% auto;
+
+        .注册头 {
+            height: 8vw;
+            text-align: center;
+            font-size: 3vw;
+            padding: 1vw 1vw 1vw;
+            color: white;
+            line-height: 8vw;
+        }
+
+        .输入栏 {
+            width: 70vw;
+            height: 30vw;
+            padding: 0px 5vw;
+
+            .账号 {
+                height: 10vw;
+
+                .账头 {
+                    font-size: 3vw;
+                    color: white;
+                }
+
+                .号 {
+                    width: 60vw;
+                    height: 5vw;
+                    padding: 6px 8px;
+                    color: white;
+                    background-color: rgba(255, 255, 255, .5);
+                }
+            }
+
+            .密码 {
+                height: 10vw;
+
+                .密头 {
+                    font-size: 3vw;
+                    color: white;
+                }
+
+                .密 {
+                    width: 60vw;
+                    height: 5vw;
+                    padding: 6px 8px;
+                    color: white;
+                    background-color: rgba(255, 255, 255, .5);
+                }
+            }
+
+            .验证码 {
+                height: 10vw;
+                line-height: 10vw;
+
+                div {
+                    display: inline-block;
+                    margin-left: 5vw;
+                }
+
+                .验 {
+                    margin-left: 8vw;
+                    width: 15vw;
+                    height: 5vw;
+                    padding: 6px 8px;
+                    color: white;
+                    background-color: rgba(255, 255, 255, .5);
+                }
+            }
+        }
+
+        .注册选项 {
+            width: 70vw;
+            height: 10vw;
+            padding: 1.5vw 7vw 7vw;
+
+            .取消 {
+                float: left;
+                width: 15vw;
+                height: 8vw;
+                font-size: 4vw;
+                line-height: 8vw;
+                text-align: center;
+                border-radius: 1vw;
+                color: #1A73E8;
+                background-color: white;
+                opacity: .7;
+                border: 1px solid gray;
+                cursor: default;
+            }
+
+            .提交 {
+                float: right;
+                width: 15vw;
+                height: 8vw;
+                font-size: 4vw;
+                line-height: 8vw;
+                border-radius: 1vw;
+                text-align: center;
+                background-color: #1A73E8;
+                opacity: .7;
+                color: white;
+                cursor: default;
+            }
+        }
+    }
+
+}

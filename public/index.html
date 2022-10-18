@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExperimentalSchedule</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+    <script src="./js/jQuery.mini.js"></script>
+    <script src="./js/echarts.mini.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <!-- 导航栏开始 -->
+    <div class="导航栏">
+        <div class="glyphicon glyphicon-menu-hamburger 图标"></div>
+        <div class="题头">QAQ</div>
+    </div>
+    <!-- 导航栏结束 -->
+    <!-- 轮播图开始 -->
+    <div class="轮播图">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="./img/1.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/2.jpg"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="./img/3.jpg"></a></div>
+            </div>
+            <!-- <div class="swiper-button-next"></div> -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- 轮播图结束 -->
+    <!-- 数据可视化开始 -->
+    <div class="数据可视化">
+        <div class="左"></div>
+        <div class="右">
+            <ul class="todolist">
+                <li class="toDo">
+                    <div class="circle1"></div>
+                    <div class="text2">近期实验:0</div>
+                </li>
+                <li class="near">
+                    <div class="circle2"></div>
+                    <div class="text1">未来实验:0</div>
+                </li>
+                <li class="OK">
+                    <div class="circle3"></div>
+                    <div class="text3">已做完:0</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 数据可视化结束 -->
+    <!-- 侧边栏开始 -->
+    <div class="侧边栏">
+        <div class="任务栏">
+            <div class="任务栏标题捏">QAQ</div>
+            <ul class="任务">
+                <li class="登录">
+                    <div class="glyphicon glyphicon-road 图标一"></div>
+                    <div class="小任务 一">登录</div>
+                </li>
+                <li class="注销">
+                    <div class="glyphicon glyphicon-floppy-remove 图标四"></div>
+                    <div class="小任务 四">注销</div>
+                </li>
+                <li class="注册">
+                    <div class="glyphicon glyphicon-pencil 图标二"></div>
+                    <div class="小任务 二">注册</div>
+                </li>
+                <li class="关于">
+                    <div class="glyphicon glyphicon-exclamation-sign 图标三"></div>
+                    <div class="小任务 三">关于</div>
+                    <div class="拉">
+                        <div class="glyphicon glyphicon-chevron-down 下拉"></div>
+                        <div class="glyphicon glyphicon-chevron-up 上拉"></div>
+                    </div>
+                    <div class="关于下拉的">
+                        <img src="./img/4.png">
+                        <a href="https://github.com/XUEWUQIUSHUANG/experimentalschedule">查看网页源代码</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="空白"></div>
+    </div>
+    <!-- 侧边栏结束 -->
+    <!-- 登录框开始 -->
+    <div class="modal-framework">
+        <div class="modal-main-body">
+            <div class="modal-title">登录</div>
+            <div class="modal-will-change">
+                <div class="modal-input-name">
+                    <div class="modal-small-title-name">账号</div>
+                    <input type="text" class="modal-change-name">
+                </div>
+                <div class="modal-input-href">
+                    <div class="modal-small-title-href">密码</div>
+                    <input type="password" class="modal-change-href">
+                </div>
+            </div>
+            <div class="modal-buttons">
+                <div class="modal-cancel">取消</div>
+                <div class="modal-confirm">提交</div>
+            </div>
+        </div>
+    </div>
+    <!-- 登录框结束 -->
+    <!-- 登录状态框开始 -->
+    <div class="登陆状态框">
+        <div class="登陆成功">
+            <div class="对号 glyphicon glyphicon-ok-circle"></div>
+            <div class="成功提示字">登陆成功</div>
+            <div class="对号按钮">
+                <div class="对号确认">确认</div>
+            </div>
+        </div>
+        <div class="登陆失败">
+            <div class="错号 glyphicon glyphicon-remove-circle"></div>
+            <div class="失败提示字">登陆失败</div>
+            <div class="错号按钮">
+                <div class="错号确认">确认</div>
+            </div>
+        </div>
+    </div>
+    <!-- 登陆状态框结束 -->
+    <!-- 注册框开始 -->
+    <div class="注册框架">
+        <div class="注册框">
+            <div class="注册头">注册</div>
+            <div class="输入栏">
+                <div class="账号">
+                    <div class="账头">账号</div>
+                    <input class="号" type="text">
+                </div>
+                <div class="密码">
+                    <div class="密头">密码</div>
+                    <input class="密" type="password">
+                </div>
+                <div class="验证码">
+                    <input class="验" type="text">
+                    <div><img src="" class="验证码图片"></div>
+                </div>
+            </div>
+            <div class="注册选项">
+                <button class="取消">取消</button>
+                <button class="提交">提交</button>
+            </div>
+        </div>
+    </div>
+    <!-- 注册框结束 -->
+    <!-- 课程列表开始 -->
+    <div class="课程列表框">
+        <div class="近期待做捏">
+            <h3>近期待做</h3>
+        </div>
+        <ul class="待做课程列表捏">
+        </ul>
+        <div class="未来待做捏">
+            <h3>未来待做</h3>
+        </div>
+        <ul class="未来课程列表捏">
+        </ul>
+        <div class="完成的捏">
+            <h3>已做完</h3>
+        </div>
+        <ul class="完成课程列表捏">
+            <!-- <li class="课程捏">
+                <div class="显示行">
+                    <div class="课程名">QAQQAQAQAQAQAQAQAQAQ</div>
+                    <div class="日期">QAQQAQAQAQAQAQAQAQAQ</div>
+                    <div class="时间">QAQQAQAQAQAQAQAQAQAQ</div>
+                </div>
+                <div class="隐藏行">
+                    <div class="位置">QAQ</div>
+                    <div class="座位号">QAQ</div>
+                    <div class="教师">QAQ</div>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <!-- 课程列表结束 -->
+</body>
+
+</html>
