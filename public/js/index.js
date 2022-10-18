@@ -123,9 +123,6 @@ $(function () {
         $.ajax({
             // url
             url: serverUrl + "login",
-            xhrFields: {
-                withCredentials: true
-            },
             // 请求类型
             type: "GET",
             // 成功回调
@@ -349,9 +346,6 @@ $(function () {
             url: serverUrl + "getData",
             // 参数
             data: { account: $(".号").val(), password: $(".密").val(), code: $(".验").val() },
-            xhrFields: {
-                withCredentials: true
-            },
             // 请求类型
             type: "GET",
             // 成功回调
