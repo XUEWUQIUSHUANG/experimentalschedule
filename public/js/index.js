@@ -353,6 +353,10 @@ $(function () {
                 if (data.code == 500) {
                     alert(body);
                 } else {
+                    console.log(data,status);
+                    if (status == 500) {
+                    alert(body);
+                } else {
                     console.log(data);
                     // console.log(课表.records.length);
                     课表 = JSON.parse(data);
@@ -363,6 +367,7 @@ $(function () {
                     localStorage.setItem("账号", $(".号").val());
                     localStorage.setItem("密码", $(".密").val());
                     加载();
+                }
                 }
             }
         })
