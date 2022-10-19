@@ -205,7 +205,7 @@ $(function () {
         $(".侧边栏").show();
         $(".任务栏").animate({
             left: 0
-        }, 500);
+        }, 200);
 
         // 侧边栏弹出时禁止页面滚动
         var top = $(document).scrollTop();
@@ -222,7 +222,7 @@ $(function () {
         }, 500);
         setTimeout(function () {
             $(".侧边栏").hide();
-        }, 500);
+        }, 200);
         $(document).unbind("scroll.unable");
     })
 
@@ -254,14 +254,14 @@ $(function () {
     // 侧边栏下拉
     $(".下拉").on("click", function () {
         $(".关于").css("height", "20vw");
-        $(".关于下拉的").stop().slideDown(500);
+        $(".关于下拉的").stop().slideDown(300);
         $(".下拉").hide();
         $(".上拉").show();
     })
 
     // 侧边栏上拉
     $(".上拉").on("click", function () {
-        $(".关于下拉的").stop().slideUp(500);
+        $(".关于下拉的").stop().slideUp(300);
         $(".上拉").hide();
         $(".下拉").show();
         $(".关于").css("height", "10vw");
